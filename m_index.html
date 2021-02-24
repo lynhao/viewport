@@ -24,11 +24,11 @@
             if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
             if (parseFloat(RegExp.$1) > 2.3) {
                 document.write('<meta name="viewport" content="width='+ baseWidth +', minimum-scale = ' + phoneScale +
-                ', maximum-scale = ' + phoneScale + ', user-scaleble=' + no +'">')
-            } else document.write('<meta name="viewport" content="width='+ baseWidth +', user-scaleble=' + no +'">')
+                ', maximum-scale = ' + phoneScale + ', user-scaleble=no">')
+            } else document.write('<meta name="viewport" content="width='+ baseWidth +', user-scaleble=no ">')
             }
             else document.write('<meta name="viewport" content="width='+ baseWidth
-            +', viewport-fit=cover, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', user-scaleble=' + no +'">')
+            +', viewport-fit=cover, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', user-scaleble=no">')
         })();
     </script>
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
@@ -87,7 +87,7 @@
             <div class="swiper-container m_team_list">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide one">
-                        <img src="./static/image/home/page2/bg3.png" alt="" style="width: 100%;height: 100%;position: absolute;">
+                        <img src="./static/image/home/page2/bg3.png" alt="" style="width: 100%;height: 100%;position: absolute;object-fit: fill;">
                         <div class="text">
                             <img src="./static/image/home/page2/text.png" alt="" >
                         </div>

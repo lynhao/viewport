@@ -568,14 +568,15 @@ body {
 }
 .m_team_list .swiper-slide.two {
   background: url(../image/home/page2/bg2.png);
+  background-size: 100% 100%;
   width: 100% !important;
-  background-size: cover;
   height: 100%;
 }
 .m_team_list .swiper-slide.three {
   background: url(../image/home/page2/bg1.png);
-  width: 375px;
-  background-size: cover;
+  background-size: 100% 100%;
+  /* width: 375px; */
+  width: 100% !important;
   height: 100%;
 }
 .m_team_list .swiper-slide .bg {
