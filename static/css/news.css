@@ -1,0 +1,64 @@
+ul {
+  list-style: none;
+}
+ul li {
+  height: 5.2rem;
+  line-height: 5.2rem;
+  border-bottom: 1px solid #bfbfbf;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+ul li .pic{
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  flex: 1;
+}
+ul li .pic i{
+  display: block;
+  background: center center url(../image/home/page5/pot.png) no-repeat;
+  width: 100%;
+  height: 100%;
+}
+ul li span{
+  flex: 10;
+  color: #313131;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.news_container {
+  position: relative;
+  overflow-y: auto;
+}
+.news_container ul{
+  position: relative;
+  overflow-y: auto;
+}
+.news_container ul li:nth-of-type(1){
+  background: linear-gradient(#e2e2e2,#ffffff 60%,  #ffffff);
+}
+.news_container .more {
+  height: 4.2rem;
+  width: 100%;
+  visibility: hidden;
+  /* transform: translateY(-100px); */
+  /* position: absolute;
+  bottom: 0; */
+}
+.news_container .more.show {
+  visibility: visible;
+  /* transform: translateY(0); */
+}
+.news_container .more>span {
+  display: inline-block;
+  width: 100%;
+  height: 4.2rem;
+  line-height: 4.2rem;
+  text-align: center;
+  color: #6a6a6a;
+  font-size: 14px;
+}

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>足球大师五周年报告</title>
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/swiper.min.css">
+    <script>
+        !(function () {
+            const DEFAULT_BASE_WIDTH = 375
+            const customViewport = ''
+            const baseWidth = customViewport ? customViewport.baseWidth : DEFAULT_BASE_WIDTH
+            const ratio = baseWidth / DEFAULT_BASE_WIDTH
+            const phoneScale = parseInt(window.screen.width) / baseWidth * ratio;
+            // const phoneScale = 1;
+            if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+            if (parseFloat(RegExp.$1) > 2.3) {
+                document.write('<meta name="viewport" content="width='+ baseWidth +', minimum-scale = ' + phoneScale +
+                ', maximum-scale = ' + phoneScale + ', user-scaleble=' + no +'">')
+            } else document.write('<meta name="viewport" content="width='+ baseWidth +', user-scaleble=' + no +'">')
+            }
+            else document.write('<meta name="viewport" content="width='+ baseWidth
+            +', viewport-fit=cover, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', user-scaleble=' + no +'">')
+        })();
+    </script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="./static/js/common.js" async></script>
+    <script src="./static/js/jquery.fullPage.min.js"></script>
+    <script src="./static/js/base64.js"></script>
+    <script src="./static/js/swiper.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+  <!-- <header>
+    <div class="logo">
+      <i><img src="./static/image/home/page1/logo1.png" alt=""></i>
+      <i><img src="./static/image/home/page1/logo2.png" alt=""></i>
+      <div class="container">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </header> -->
+    <div id="a-container" class="a-container" style="top: 0rem;">
+      <ul class="menu" style="right: -100%;">
+          <li><a href="./m_index.html">HOMEPAGE</a></li>
+          <li><a href="./news.html">NEWS</a></li>
+          <li><a href="./game_feature.html">GAMEFEATURE</a></li>
+          <!-- <li>TOPUP</li> -->
+      </ul>
+        <div class="section a_item1">
+          <picture>
+            <source media="(max-width: 600px)" srcset="./static/image/home/page1/1.jpg">
+            <source media="(min-width: 800px)" srcset="./static/image/home/page1/elva-800w.jpg">
+            <img src="./static/image/home/page1/elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+          </picture>
+          <div class="shop">
+            <div class="apple">
+              <img src="./static/image/home/page1/apple.png" alt="">
+            </div>
+            <div class="google">
+              <img src="./static/image/home/page1/google.png" alt="">
+            </div>
+          </div>
+          <div class="group">
+            <div class="topup">
+              <img src="./static/image/home/page1/pay.png" alt="">
+            </div>
+          </div>
+          <div class="item_box">
+              <span class="page-arrow-down"></span>
+          </div>
+        </div>
+        <div class="section a_item2">
+            <div class="swiper-container m_team_list">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+                        <img src="./static/image/home/page2/bg3.png" alt="" style="width: 100%;height: 100%;position: absolute;">
+                        <div class="text">
+                            <img src="./static/image/home/page2/text.png" alt="" >
+                        </div>
+                        <div class="team">
+                            <div class="team_pic">
+                                <img src="./static/image/home/page2/team1.png" alt="">
+                            </div>
+                            <div class="video">
+                                <div class="static">
+                                    <img src="./static/image/home/page2/video_img1.png" alt="">
+                                    <label><i></i></label>
+                                </div>
+                                <div class="dynm"><video width="100%" height="100%" controls="controls"></video></div>
+                            </div>
+                            <div class="word">
+                                <span>In 2019, they won four trophies, completing an unprecedented sweep of all domestic trophies in England and becoming the first English men's team to win the domestic treble.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <div class="text">
+                            <img src="./static/image/home/page2/text.png" alt="" >
+                        </div>
+                        <div class="team">
+                            <div class="team_pic">
+                                <img src="./static/image/home/page2/team2.png" alt="">
+                            </div>
+                            <div class="video">
+                                <div class="static">
+                                    <img src="./static/image/home/page2/video_img1.png" alt="">
+                                    <label><i></i></label>
+                                </div>
+                                <div class="dynm"><video width="100%" height="100%" controls="controls"></video></div>
+                            </div>
+                            <div class="word">
+                                <span>Since they were founded in 1892, the Liverpool Football Club name was synonymous with fame and glory.Liverpool has won seven FA Cups and seven League.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <div class="text">
+                            <img src="./static/image/home/page2/text.png" alt="" >
+                        </div>
+                        <div class="team">
+                            <div class="team_pic">
+                                <img src="./static/image/home/page2/team3.png" alt="">
+                            </div>
+                            <div class="video">
+                                <div class="static">
+                                    <img src="./static/image/home/page2/video_img1.png" alt="">
+                                    <label><i></i></label>
+                                </div>
+                                <div class="dynm">
+                                    <video width="100%" height="100%" controls="controls"></video>
+                                </div>
+                            </div>
+                            <div class="word">
+                                <span>Ac Milan, a venerable club founded in 1899 and has won a joint record three Intercontinental Cups and one FIFA Club World Cup, sevent European Cup titles.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-team_pagination"></div>
+                <div class="item_box">
+                    <span class="page-arrow-down"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="section a_item3">
+            <div class="m_game_feature">
+                <div class="text">
+                    <img src="./static/image/home/page3/text.png" alt="" >
+                </div>
+                <div class="feature-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide one">
+                            <div class="" style="width: 100%;height: 50%;">
+                                <img src="../static/image/page3/game1.png" alt="" class="feature">
+                                <div class="l-indicator">
+                                    <i class="l-text">PLAYER WITH MULTI-DIMENSION PERFORMANCE</i>
+                                </div>
+                            </div>
+                            <div class="" style="width: 100%;height: 50%;">
+                                <img src="../static/image/page3/game2.png" alt="" class="feature">
+                                <div class="r-indicator">
+                                    <i class="r-text">ADVANCED GRAPHIC AND 3D MODEL</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide two">
+                            <div class="" style="width: 100%;height: 50%;">
+                                <img src="../static/image/page3/game3.png" alt="" class="feature">
+                                <div class="l-indicator">
+                                    <i class="l-text">PLAYER WITH MULTI-DIMENSION PERFORMANCE</i>
+                                </div>
+                            </div>
+                            <div class="" style="width: 100%;height: 50%;">
+                                <img src="../static/image/page3/game4.png" alt="" class="feature">
+                                <div class="r-indicator">
+                                    <i class="r-text">ADVANCED GRAPHIC AND 3D MODEL</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide three">
+                            <div class="" style="width: 100%;height: 50%;">
+                                <img src="../static/image/page3/game5.png" alt="" class="feature">
+                                <div class="l-indicator">
+                                    <i class="l-text">PLAYER WITH MULTI-DIMENSION PERFORMANCE</i>
+                                </div>
+                            </div>
+                            <div class="" style="width: 100%;height: 50%;">
+                                <img src="../static/image/page3/game6.png" alt="" class="feature">
+                                <div class="r-indicator">
+                                    <i class="r-text">ADVANCED GRAPHIC AND 3D MODEL</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-swiper-container-pagination"></div>
+                </div>
+            </div>
+            <div class="item_box">
+                <span class="page-arrow-down"></span>
+            </div>
+        </div>
+        <div class="section a_item4">
+            <div class="m_all_teams">
+                <div class="text">
+                    <img src="./static/image/home/page4/text.png" alt="" >
+                </div>
+                <div class="teams_container">
+                    <div class="team">
+                        <span class="team_name">Manchester City F.C</span>
+                        <div class="team_logo">
+                            <img src="./static/image/home/page4/logo3.png" alt="">
+                        </div>
+                        <div class="team_pic">
+                            <img src="./static/image/home/page4/team3.png">
+                        </div>
+                    </div>
+                    <div class="team">
+                        <span class="team_name">FC Bayern München</span>
+                        <div class="team_logo">
+                            <img src="./static/image/home/page4/logo2.png" alt="">
+                        </div>
+                        <div class="team_pic">
+                            <img src="./static/image/home/page4/team1.png">
+                        </div>
+                    </div>
+                    <div class="team">
+                        <span class="team_name">A.C. Milan</span>
+                        <div class="team_logo">
+                            <img src="./static/image/home/page4/logo1.png" alt="">
+                        </div>
+                        <div class="team_pic">
+                            <img src="./static/image/home/page4/team2.png">
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="terms">
+                        <div class="logo">
+                            <img src="./static/image/home/page4/gala.png" alt="">
+                        </div>
+                        <span>Privary Policy</span>
+                        <span>Copyright ©2020 Galasports. All rights reserved</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+</body>
+<script src="./static/js/textData.js"></script>
+<script>
+    let videoPlayEl;
+    let video = undefined;
+
+    window.addEventListener('resize', e => {
+        window.location.reload()
+    })
+    let imgEl = document.querySelectorAll('.a_item1 img')[0]
+
+    autosize(imgEl, document.documentElement.clientHeight, document.documentElement.clientWidth)
+    function autosize(ImgD,h,w) {
+      var image=new Image(); 
+      image.src=ImgD.src; 
+      if (image.width<w && image.height<h) {
+        ImgD.width=image.width;
+        ImgD.height=image.height;
+      } else {
+        if (w / h <= image.width / image.height) {
+          ImgD.width=w;
+          ImgD.height=w * (image.height / image.width);
+          // ImgD.height = ImgD.height / setRem(w, h, image.width, image.height) + 'rem'
+        } else {
+          ImgD.width=h * (image.width / image.height);
+          ImgD.height=h;
+        }
+      }
+    }
+    function setRem(sw,sh, w, h) {
+      return (sw/w)*100
+    }
+    function initSwiper() {
+      let swiper = new Swiper('.m_team_list', {
+        autoplay: false,
+        // loop: true, // 循环模式选项
+        speed: 500,
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-team_pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+            return `<div class="common${index} ${className}"></div>`;
+            },
+        },
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper_game_next',
+          prevEl: '.swiper_game_prev',
+        },
+        on: {
+          init: (e) => {
+              videoPlayEl = document.querySelectorAll('.swiper-slide .video')[0]
+              videoPlayEl.addEventListener('click', playVideo.bind(this))
+          },
+          slideChange: (e) => {
+            videoPlayEl = document.querySelectorAll('.m_team_list .video')[swiper.activeIndex]
+            videoPlayEl.addEventListener('click', playVideo.bind(this))
+
+            if (video) {
+                if (video.currentTime > 0) {
+                    video.pause()
+                }
+            }
+          },
+        },
+      });
+    function playControl() {
+        video = videoPlayEl.children[1].children[0]
+        if (swiper.activeIndex === 0) {
+            video.addEventListener('ended', e => {
+            swiper.autoplay.start()
+            })
+            swiper.autoplay.stop()
+        } else if (swiper.activeIndex === 1) {
+            video.addEventListener('ended', e => {
+            swiper.autoplay.start()
+            })
+            swiper.autoplay.stop()
+        } else if (swiper.activeIndex === 2) {
+            video.addEventListener('ended', e => {
+            swiper.autoplay.start()
+            })
+            swiper.autoplay.stop()
+        }
+        video.play()
+    }
+      function playVideo() {
+        videoPlayEl.children[0].style.display = 'none'
+        video = videoPlayEl.children[1].children[0]
+
+        video.addEventListener('play', playControl.bind(this))
+
+        videoPlayEl.children[1].style.display = 'block'
+        video.setAttribute('crossorigin', 'anonymous');  
+        if (swiper.activeIndex === 0) {
+            video.src = '../static/video/v1.mp4'
+        } else if (swiper.activeIndex === 1) {
+            video.src = '../static/video/v2.mp4'
+        } else if (swiper.activeIndex === 2) {
+            video.src = '../static/video/v3.mp4'
+        }
+        video.play()
+      }
+    }
+    let featureSwiper;
+    function initFeatureSwiper() {
+        featureSwiper = new Swiper('.feature-swiper', {
+        autoplay: false,
+        spaceBetween: 100,
+        // loop: true, // 循环模式选项
+        speed: 500,
+        // 如果需要分页器
+        pagination: {
+            el: '.feature-swiper-container-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+            return `<div class="common${index} ${className}"></div>`;
+            },
+        },
+        on: {
+          init: (e) => {
+
+          },
+          slideChange: (e) => {
+            videoPlayEl = document.getElementsByClassName('small_video_window')[swiper.activeIndex]
+            videoPlayEl.addEventListener('click', playVideo.bind(this))
+            if (video) {    
+                video.pause()
+            }
+        },
+        },
+      });
+    }
+    $(function () {
+        (function () {
+          initSwiper();
+          initFeatureSwiper();
+        })();
+        var pageData = {
+            creatTime: [],
+            creatDay: [],
+            excess1: [],
+            loginDay: [],
+        };
+        var fullPage = $('#a-container').fullpage({
+            // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+            afterRender: function () {
+                // 获取玩家ID
+                var user_id = getUrlParam("nm");
+                if (user_id) {
+                    $("#user_id").html(user_id);
+                } else {
+                    $("#user_id").html('无名氏的');
+                }
+            },
+            onLeave: function (index, toIndex) {
+                // console.log(toIndex)
+                if (toIndex === 1) {
+                    if (videoPlayEl) {
+                        videoPlayEl.children[1].children[0].pause()
+                    }
+                }
+                if (toIndex === 2) {
+                    let teamEl = document.querySelector('.m_team_list .swiper-slide .team')
+                    let titleEl = document.querySelector('.m_game_feature .text')
+                    let paginatorEl = document.querySelector('.swiper-team_pagination')
+                    let arrowEl = document.querySelector('.page-arrow-down')
+                    teamEl.style.height = window.innerHeight 
+                    - titleEl.getBoundingClientRect().height
+                    - paginatorEl.getBoundingClientRect().height
+                    - arrowEl.getBoundingClientRect().height + 'px'
+                } else if (toIndex === 3) {
+                    if (videoPlayEl) {
+                        if (videoPlayEl) {
+                            videoPlayEl.children[1].children[0].pause()
+                        }                    
+                    }
+                    let titleEl = document.querySelector('.m_game_feature .text')
+                    let swiperEl = document.querySelector('.m_game_feature .feature-swiper')
+                    let paginatorEl = document.querySelector('.feature-swiper-container-pagination')
+                    let arrowEl = document.querySelector('.page-arrow-down')
+                    swiperEl.style.height = window.innerHeight 
+                    - titleEl.getBoundingClientRect().height 
+                    - paginatorEl.getBoundingClientRect.height
+                    - arrowEl.getBoundingClientRect.height + 'px'
+
+                } else if (toIndex === 4) {
+                    let teamContainer = document.querySelector('.m_all_teams')
+                    let titleEl = document.querySelector('.m_all_teams .text')
+                    let contentEl = document.querySelector('.m_all_teams .teams_container')
+                    let footerEl = document.querySelector('footer')
+                    contentEl.style.height = (teamContainer.getBoundingClientRect().height 
+                    - titleEl.getBoundingClientRect().height
+                    - footerEl.getBoundingClientRect().height) + 'px'
+                }
+            },
+            afterLoad: function (anchorLink, index) {
+              let pageEl = document.getElementsByClassName('section')[0]
+              menu.style.top = Math.abs(pageEl.getBoundingClientRect().height) * (index - 1) + 'px'
+            },
+        });
+        // $.fn.fullpage.moveTo(7, 0);
+
+        // 获取url地址的参数 
+        function getUrlParam(variable) {
+            var query = decodeURI(window.location.search.substring(1));
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) {
+                    return pair[1];
+                }
+            }
+            return (false);
+        }
+
+        // 将时间转化成字符串数组 
+        function getTimeArr(nS) {
+            var timeArr = [],
+                time = new Date(parseInt(nS)).toLocaleString().split(' ')[0].split('/');
+            for (var i = 0; i < time.length; i++) {
+                if (time[i] < 10) {
+                    timeArr.push('0');
+                }
+                for (var j of time[i]) {
+                    timeArr.push(j);
+                }
+            }
+            return timeArr;
+        }
+
+    });
+</script>
+
+</html>

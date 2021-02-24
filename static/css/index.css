@@ -1,0 +1,21 @@
+#main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition:top 1s;
+}
+#main .page {
+  position: relative;
+}
+#main #page1 {
+  background: hotpink;
+}
+#main #page2 {
+  background: salmon;
+}
+#main #page3 {
+  background: darkgreen;
+}
+#main #page4 {
+  background: lightblue;
+}

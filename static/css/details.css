@@ -1,0 +1,43 @@
+.detail_container {
+  width: 375px;
+  background: linear-gradient(#e2e2e2,#ffffff 15%, #ffffff);
+}
+.detail_container .title {
+  padding-top: 2.4rem;
+  padding-bottom: 1.5rem;  
+  font-size: 34px;
+  color: #313131;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+.detail_container .pub_time {
+  font-size: 14px;
+  color: #777777;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.detail_container .content {
+  border-top: 1px solid #bfbfbf;
+  width: 95%;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+.detail_container .content > div {
+  padding-top: 2rem;
+}
+@media (max-width: 414px) {
+  .detail_container .title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 375px) {
+  .detail_container .title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 320px){
+  .detail_container .title {
+      font-size:22px;
+  }
+}
